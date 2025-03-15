@@ -1,0 +1,86 @@
+# bloc_structure
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
+
+[//]: # (For notificaton)
+
+[//]: # (flutter pub add flutter_local_notifications)
+
+[//]: # ()
+[//]: # (add some lines in manifest file)
+
+[//]: # (<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>)
+
+[//]: # ()
+[//]: # (<receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver")
+
+[//]: # (tools:ignore="MissingClass" />)
+
+[//]: # (<receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver")
+
+[//]: # (tools:ignore="MissingClass">)
+
+[//]: # (<intent-filter>)
+
+[//]: # (<action android:name="android.intent.action.BOOT_COMPLETED"/>)
+
+[//]: # (<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>)
+
+[//]: # (<action android:name="android.intent.action.QUICKBOOT_POWERON" />)
+
+[//]: # (<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>)
+
+[//]: # (</intent-filter>)
+
+[//]: # (</receiver>)
+
+[//]: # ()
+[//]: # (        <service)
+
+[//]: # (            android:name="com.dexterous.flutterlocalnotifications.ForegroundService")
+
+[//]: # (            android:exported="false")
+
+[//]: # (            android:stopWithTask="false")
+
+[//]: # (            android:foregroundServiceType="location|camera|microphone"  tools:ignore="MissingClass" >)
+
+[//]: # (        </service>)
+
+[//]: # ()
+[//]: # (changes in gradle file)
+
+[//]: # ()
+[//]: # (    compileOptions {)
+
+[//]: # (      coreLibraryDesugaringEnabled = true)
+
+[//]: # (    })
+
+[//]: # (   )
+[//]: # (    defaultConfig {)
+
+[//]: # (        multiDexEnabled = true)
+
+[//]: # (    })
+
+[//]: # (   dependencies {)
+
+[//]: # (     coreLibraryDesugaring&#40;"com.android.tools:desugar_jdk_libs:2.1.4"&#41;)
+
+[//]: # (   })
+

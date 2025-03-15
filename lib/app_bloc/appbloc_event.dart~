@@ -1,0 +1,11 @@
+abstract class AppblocEvent {}
+
+class InitEvent extends AppblocEvent {}
+
+class ThemeChangeEvent extends AppblocEvent {
+
+  final bool isDarkMode;
+
+  ThemeChangeEvent(this.isDarkMode);
+
+}
