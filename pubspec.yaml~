@@ -1,5 +1,5 @@
 name: bloc_structure
-description: "A Flutter package to easily setup for your new Flutter app with bloc architecture."
+description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 
