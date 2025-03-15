@@ -16,6 +16,7 @@ description: "A new Flutter project."
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
 version: 1.0.0+1
+repository: https://github.com/Gourav-sharma/flutter_common_Setup
 
 environment:
   sdk: ^3.6.2
